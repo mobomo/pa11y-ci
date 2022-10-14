@@ -1,9 +1,11 @@
 {
     "defaults": {
+        "standard": "WCAG2AA",
         "chromeLaunchConfig": {
             "args": [
                 "--no-sandbox"
-            ]
+            ],
+            "ignoreHTTPSErrors": false
         },
         "reporters": [
             ["pa11y-ci-reporter-html", { "destination": "/app/reports", "includeZeroIssues": true }],
